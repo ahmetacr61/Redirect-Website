@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #101010;
+}
+
+.title {
+    margin: 25px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #88F;
+    text-shadow: 2px 2px 10px black;
+}
+
+.madeBy {
+    position: relative;
+    top: 110px;
+    color: #88F;
+    font-size: 20px;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    color: white;
+    text-shadow: 2px 2px 25px black;
+    opacity: 0.4;
+    transition: all 0.2s;
+}
+
+.card-desc {
+    font-size: 20px;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    opacity: 0.4;
+    transition: all 0.2s;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.card {
+    position: relative;
+    height: 150px;
+    width: 300px;
+    margin: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.shadow-box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.3;
+    transition: all 0.2s;
+}
+
+.link {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    opacity: 0.4;
+    transition: all 0.2s;
+    border-radius: 10px;
+    margin: 80px;
+    bottom: 20px;
+}
+
+.img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card:hover .shadow-box {
+    opacity: 0.5;
+}
+
+.card:hover .link {
+    opacity: 1;
+}
+
+.card:hover .card-desc {
+    opacity: 1;
+}
+
+.card:hover .card-title {
+    opacity: 1;
+}
+
+.link:hover {
+    color: aqua;
+}
